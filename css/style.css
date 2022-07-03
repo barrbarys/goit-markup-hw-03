@@ -1,23 +1,17 @@
 /* Link Styles */
 :root {
 	/* Кольори */
-	--nav-link-clr: #212121;
-	--text-bl: #212121;
-	--text-wh: rgba(255, 255, 255, 1);
-	--bkgrnd-antr: #2F303A;
-	--text-wh1: rgba(255, 255, 255, 0.6);
-	--gen-blue: #2196F3;
-	--header-bkgrnd: #FFFFFF;
-	--footer-bkgrnd: #2F303A;
+	--primary-black: #212121;
+	--primary-white: #FFFFFF;
+	--dark-background: #2F303A;
+	--transparent-white: rgba(255, 255, 255, 0.6);
+	--accent: #2196F3;	
 	--logo-bl: #000000;
-	--page-text: #757575;
+	--page-grey: #757575;
 	--main-font-family: "Roboto", sans-serif;
 	--logo-font-family: "Raleway", sans-serif;
-	--header-link-clr: #757575;
-	--adress-col: #ffffff;
-	--btn-col: #ffffff;
 	--btn-hover: #188CE8;
-	--flt-btn-col: #F5F4FA;
+	--flt-btn-bgc: #F5F4FA;
 
 
 }
@@ -34,7 +28,7 @@ body {
 }
 
 .nav-item {
-	color: var(--nav-link-clr);
+	color: var(--primary-black);
 }
 
 .list {
@@ -52,7 +46,7 @@ body {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
-	color: var(--gen-blue);
+	color: var(--accent);
 }
 
 .header {
@@ -75,21 +69,21 @@ body {
 }
 
 .footer-logo {
-	color: var(--text-wh);
+	color: var(--primary-white);
 }
 
 .footer {
-	background-color: var(--footer-bkgrnd);
+	background-color: var(--dark-background);
 }
 
 .address-link[target="_blank"] {
-	color: var(--adress-col);
+	color: var(--primary-white);
 }
 
 
 .address {
 	font-style: inherit;
-	color: var(--text-wh1);
+	color: var(--transparent-white);
 }
 
 
@@ -101,7 +95,7 @@ body {
 	line-height: 1.17;
 	text-align: center;
 	letter-spacing: 0.03em;
-	color: var(--text-bl);
+	color: var(--primary-black);
 }
 
 /* index-page styles */
@@ -109,15 +103,15 @@ body {
 /* hero-section styles */
 .hero-btn:hover,
 .hero-btn:focus {
-	color: var(--text-wh);
+	color: var(--primary-white);
 	background-color: var(--btn-hover);
 }
 
 .hero-btn {
-	background-color: var(--gen-blue);
+	background-color: var(--accent);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
-	color: var(--text-wh);
+	color: var(--primary-white);
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
@@ -136,11 +130,11 @@ body {
 	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	color: var(--text-wh);
+	color: var(--primary-white);
 }
 
 .hero {
-	background-color: var(--bkgrnd-antr);
+	background-color: var(--dark-background);
 }
 
 /* features-section styles */
@@ -154,7 +148,7 @@ body {
 	line-height: 16px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--text-bl);
+	color: var(--primary-black);
 }
 
 /* work-section styles */
@@ -172,7 +166,7 @@ body {
 }
 
 .team-title {
-	color: var(--text-bl);
+	color: var(--primary-black);
 	font-weight: 500;
 }
 
@@ -182,8 +176,8 @@ body {
 }
 
 .filter-btn {
-	background-color: var(--flt-btn-col);
-	color: var(--text-bl);
+	background-color: var(--flt-btn-bgc);
+	color: var(--primary-black);
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
@@ -195,8 +189,8 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-	background-color: var(--gen-blue);
-	color: var(--text-wh);
+	background-color: var(--accent);
+	color: var(--primary-white);
 }
 
 
@@ -205,7 +199,7 @@ body {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
-	color: var(--text-bl);
+	color: var(--primary-black);
 
 }
 
@@ -222,5 +216,5 @@ body {
 .address-link:focus,
 .portf-li:hover,
 .portf-li:focus {
-	color: var(--gen-blue);
+	color: var(--accent);
 }
