@@ -208,13 +208,11 @@ body {
 	line-height: 1.88;
 }
 
-.nav-item:hover,
-.nav-item:focus,
+.nav-link:hover,
+.nav-link:focus,
 .header-li:hover,
 .header-li:focus,
 .address-link:hover,
-.address-link:focus,
-.portf-li:hover,
-.portf-li:focus {
+.address-link:focus {
 	color: var(--accent);
 }
