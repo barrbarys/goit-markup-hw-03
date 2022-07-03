@@ -24,10 +24,10 @@ body {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: 0.03em;
-	color: var(--page-text);
+	color: var(--page-grey);
 }
 
-.nav-item {
+.site-nav .link {
 	color: var(--primary-black);
 }
 
@@ -37,7 +37,7 @@ body {
 
 .link {
 	text-decoration: none;
-	color: currentColor
+	color: currentColor;
 }
 
 .logo {
@@ -56,16 +56,12 @@ body {
 	letter-spacing: 0.02em;
 }
 
-.header-item .link {
-	color: var(--header-link-clr);
+.header-link .link {
+	color: var(--page-grey);
 }
 
 .header .header-logo {
 	color: var(--logo-bl);
-}
-
-.header {
-	background-color: var(--header-bkgrnd);
 }
 
 .footer-logo {
@@ -142,11 +138,9 @@ body {
 	display: none;
 }
 
-.features-title {
+.features .title {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	color: var(--primary-black);
 }
@@ -171,7 +165,7 @@ body {
 }
 
 /* Portfolio-page styles */
-.portfolio-title {
+.portfolio .title{
 	display: none;
 }
 
@@ -194,7 +188,7 @@ body {
 }
 
 
-.portfolio-subtitle {
+.portfolio-list .subtitle {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -208,8 +202,10 @@ body {
 	line-height: 1.88;
 }
 
-.nav-link:hover,
-.nav-link:focus,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.header-link .link:hover,
+.header-link .link:focus,
 .address-link:hover,
 .address-link:focus {
 	color: var(--accent);
