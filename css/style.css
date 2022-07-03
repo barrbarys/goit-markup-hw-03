@@ -210,8 +210,6 @@ body {
 
 .nav-link:hover,
 .nav-link:focus,
-.header-li:hover,
-.header-li:focus,
 .address-link:hover,
 .address-link:focus {
 	color: var(--accent);
