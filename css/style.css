@@ -43,9 +43,7 @@ body {
 	color: #FFFFFF;
 }
 
-.site-nav .link {
-	color: var(--primary-black);
-}
+
 
 .list {
 	margin: 0;
@@ -53,21 +51,34 @@ body {
 	list-style: none;
 }
 
+/* reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+img {
+	display: block;
+}
+
 .link {
 	text-decoration: none;
 	color: currentColor;
 }
 
-.logo {
-	display: inline-block;
-	padding-top: 24px;
-	padding-bottom: 24px;
-	font-family: var(--logo-font-family);
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: 0.03em;
-	color: var(--accent);
+
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	outline: 2px solid tomato;
 }
 
 .header {
@@ -80,19 +91,74 @@ body {
 
 }
 
-.header .link {
+.logo {
+	margin-right: 93px;
 	display: inline-block;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	color: var(--accent);
+
+	font-family: var(--logo-font-family);
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
 }
 
-.header-link .link {
-
-	color: var(--page-grey);
-}
-
-.header .header-logo {
+.header-logo {
 	color: var(--logo-bl);
 }
 
+
+.site-nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--primary-black);
+
+
+}
+
+.header-container {
+	display: flex;
+	align-items: center;
+
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.site-nav {
+	display: flex;
+
+}
+
+.site-nav .item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.header-link {
+	display: flex;
+	margin-left: auto;
+}
+
+.header-link .item+.item {
+	margin-left: 50px;
+
+}
+
+
+
+.header-link .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--page-grey);
+
+}
+
+/* footer styles */
 .footer-logo {
 	color: var(--primary-white);
 }
@@ -132,12 +198,7 @@ body {
 	background-color: var(--btn-hover);
 }
 
-.container {
-	width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
-	outline: 2px solid tomato;
-}
+
 
 .hero-btn {
 	margin-top: 0;
@@ -215,6 +276,7 @@ body {
 
 /* work-section styles */
 .work {
+	text-align: center;
 	background-color: yellow;
 	padding-bottom: 94;
 	margin-top: 0;
@@ -294,8 +356,6 @@ body {
 	text-align: left;
 }
 
-justify-content: space-between;
-}
 
 .portfolio-list .work-names {
 	margin-top: 0;
