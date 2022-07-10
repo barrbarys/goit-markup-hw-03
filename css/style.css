@@ -227,13 +227,17 @@ img {
 .hero {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding: 200px auto;
+
+
+
 	text-align: center;
 	background-color: var(--dark-background);
 }
 
 .hero-title {
 	display: inline-block;
-	margin: 0 452px;
+	
 	margin-bottom: 30px;
 	font-weight: 900;
 	font-size: 44px;
