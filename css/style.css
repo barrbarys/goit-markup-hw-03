@@ -34,8 +34,8 @@
 .site-nav .link:focus,
 .header-link .link:hover,
 .header-link .link:focus,
-.address-link:hover,
-.address-link:focus {
+.address-item a:hover,
+.address-item a:focus {
 	color: var(--accent);
 }
 
