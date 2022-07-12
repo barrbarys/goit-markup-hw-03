@@ -12,6 +12,7 @@
 	--logo-font-family: "Raleway", sans-serif;
 	--btn-hover: #188CE8;
 	--light-grey-bgc: #F5F4FA;
+	--header-border-clr:#ECECEC;
 }
 
 /* visually-hidden */
@@ -115,7 +116,12 @@ img {
 
 /* header */
 .header {
+<<<<<<< Updated upstream
 	border-bottom: 1px solid #ECECEC;
+=======
+	background-color: var(--primary-white);
+	border-bottom: 1px solid var(--header-border-clr);
+>>>>>>> Stashed changes
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -124,8 +130,15 @@ img {
 }
 
 .logo {
+<<<<<<< Updated upstream
 	margin-right: 93px;
 	display: block;
+=======
+	display: inline-block;
+	padding-top: 24px;
+	padding-bottom: 24px;
+
+>>>>>>> Stashed changes
 	color: var(--accent);
 
 	font-family: var(--logo-font-family);
@@ -134,7 +147,7 @@ img {
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 }
-
+.header .logo{margin-right: 93px;}
 .header-logo {
 	color: var(--logo-bl);
 	margin-right: 93px;
@@ -153,6 +166,11 @@ img {
 .header-container {
 	display: flex;
 	align-items: center;
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
 }
 
 .site-nav {
@@ -225,13 +243,21 @@ img {
 }
 
 .hero {
+<<<<<<< Updated upstream
 	padding-top: 200px;
 	padding-bottom: 200px;
+=======
+
+	padding-top:200px;
+	padding-bottom: 200px;
+
+>>>>>>> Stashed changes
 	text-align: center;
 	background-color: var(--dark-background);
 }
 
 .hero-title {
+	max-width: 640px;
 	display: inline-block;
 	max-width: 670px;
 	margin-bottom: 30px;
