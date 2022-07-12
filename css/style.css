@@ -12,7 +12,8 @@
 	--logo-font-family: "Raleway", sans-serif;
 	--btn-hover: #188CE8;
 	--light-grey-bgc: #F5F4FA;
-	--header-border-clr:#ECECEC;
+	--header-border-clr: #ECECEC;
+	--portfolio-card-border-clr:#EEEEEE;
 }
 
 /* visually-hidden */
@@ -80,7 +81,8 @@ body {
 
 img {
 	display: block;
-	padding: 0;
+	height: auto;
+	max-width: 100%;
 }
 
 h1,
@@ -94,9 +96,6 @@ ul {
 	margin: 0;
 }
 
-img {
-	display: block;
-}
 
 .link {
 	text-decoration: none;
@@ -116,12 +115,7 @@ img {
 
 /* header */
 .header {
-<<<<<<< Updated upstream
-	border-bottom: 1px solid #ECECEC;
-=======
-	background-color: var(--primary-white);
 	border-bottom: 1px solid var(--header-border-clr);
->>>>>>> Stashed changes
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
@@ -130,27 +124,23 @@ img {
 }
 
 .logo {
-<<<<<<< Updated upstream
-	margin-right: 93px;
 	display: block;
-=======
-	display: inline-block;
-	padding-top: 24px;
-	padding-bottom: 24px;
-
->>>>>>> Stashed changes
 	color: var(--accent);
-
 	font-family: var(--logo-font-family);
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
 }
-.header .logo{margin-right: 93px;}
+
+.header .logo {
+	margin-right: 93px;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
 .header-logo {
 	color: var(--logo-bl);
-	margin-right: 93px;
 }
 
 .site-nav .link {
@@ -166,11 +156,6 @@ img {
 .header-container {
 	display: flex;
 	align-items: center;
-<<<<<<< Updated upstream
-=======
-
-
->>>>>>> Stashed changes
 }
 
 .site-nav {
@@ -199,7 +184,6 @@ img {
 	display: block;
 	padding-top: 32px;
 	padding-bottom: 32px;
-
 	color: var(--page-grey);
 
 }
@@ -243,15 +227,8 @@ img {
 }
 
 .hero {
-<<<<<<< Updated upstream
 	padding-top: 200px;
 	padding-bottom: 200px;
-=======
-
-	padding-top:200px;
-	padding-bottom: 200px;
-
->>>>>>> Stashed changes
 	text-align: center;
 	background-color: var(--dark-background);
 }
@@ -284,13 +261,9 @@ img {
 
 }
 
-
-
 .features .title {
 	margin-top: 0;
 	margin-bottom: 10px;
-
-
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -299,20 +272,11 @@ img {
 
 .features p {
 	margin-top: 0;
-
-
 }
 
-.features .list {
-	display: flex;
-	flex-wrap: wrap;
-
-
-}
 
 .features .item {
 	width: calc((100% - 3 * 30px) / 4);
-	gap: 30px;
 }
 
 
@@ -335,12 +299,10 @@ img {
 /* team-section styles */
 .team {
 	background-color: var(--light-grey-bgc);
-	margin-bottom: 0;
 }
 
 .team-title,
-.team-text,
-.team-img {
+.team-text {
 	font-size: 16px;
 	line-height: 1.19;
 }
@@ -364,10 +326,8 @@ img {
 	margin-bottom: 10px;
 }
 
-
 /* Portfolio-page styles */
 .portfolio {
-
 	text-align: left;
 }
 
@@ -400,7 +360,7 @@ img {
 .filter-list {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 34px;
+	margin-bottom: 50px;
 }
 
 .filter-list .item {
@@ -411,26 +371,30 @@ img {
 	margin-left: 8px;
 }
 
-.portfolio-list {
-	display: flex;
-	flex-wrap: wrap;
 	/* justify-content: space-between;  робить дирку в разі іншої кількості елементів*/
-}
-.hover-text{display: none	;}
-.portfolio-list li {
-	width: calc((100% - 60px) / 3);
 
-	
+
+.hover-text {
+	display: none;
+}
+
+.portfolio-item {
+	flex-basis: calc((100% - 60px) / 3);
+
+
 
 }
-.card-description{
-border: 1px solid #EEEEEE;
-border-top: none;
-padding: 20px 24px;
+
+.card-description {
+	border: 1px solid var(--portfolio-card-border-clr);
+	border-top: none;
+	padding: 20px 24px;
 }
-.subtitle{
+
+.subtitle {
 	margin-bottom: 4px;
 }
+
 /* крайні праві і нижні маржини */
 
 /* 
@@ -506,8 +470,6 @@ padding: 20px 24px;
 }
 
 .address {
-	display: flex;
-	flex-direction: column;
 	font-style: inherit;
 	color: var(--transparent-white);
 }
@@ -518,4 +480,8 @@ padding: 20px 24px;
 
 .address-item:not(:last-child) {
 	margin-bottom: 9px;
+}
+
+.site-nav .current-page {
+	color: var(--accent);
 }
