@@ -307,6 +307,7 @@ ul {
 }
 
 .team .item {
+	background-color: var(--primary-white);
 	text-align: center;
 	width: calc((100% - 3 * 30px) / 4);
 	border-radius: 0px 0px 4px 4px;
