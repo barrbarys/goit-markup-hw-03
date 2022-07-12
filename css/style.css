@@ -458,12 +458,6 @@ ul {
 	padding-bottom: 60px;
 }
 
-/* .footer .list{
-		display: flex;
-		flex-direction: column;
-		padding-top: 60px;
-		padding-bottom: 60px;
-} */
 .address-link[target="_blank"] {
 	color: var(--primary-white);
 }
